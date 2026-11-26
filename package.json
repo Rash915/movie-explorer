@@ -1,0 +1,35 @@
+{
+  "name": "movie-explorer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node server/index.js",
+    "dev:web": "vite",
+    "start": "node server/index.js",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.21.1",
+    "express": "^5.3.0",
+    "framer-motion": "^14.14.0",
+    "lucide-react": "^1.81.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.7.0",
+    "concurrently": "^10.0.7",
+    "oxlint": "^1.94.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.14"
+  }
+}
